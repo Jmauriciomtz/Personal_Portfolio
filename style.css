@@ -1,0 +1,64 @@
+body {
+    position: relative;
+}
+/*---- nav ---- */
+.navbar-fixed-top {
+    position: fixed;
+    border-color: rgba(255, 255,255,0.2);
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.my_name {
+    font-size: x-large;
+}
+/*---- hero ----- */
+#hero {
+    background-image: url(./images/hero_background.jpg);
+    min-height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+.hero_content {
+position: relative;
+padding-top: 200px;
+left: -80px;
+}
+@media (max-width: 576px) {
+    .hero_content {
+        left: -40px;
+    }
+}
+.hero_content>h1 {
+    font-size: 4em;
+}
+@media (max-width: 576px) {
+    .hero_content {
+        font-size: 0.7em;
+    }
+}
+.hero_content>h3 {
+    padding-right: 90px;
+}
+@media (max-width: 576px) {
+    .hero_content>h3 {
+        font-size: 2em;
+        padding-right: 45px;
+    }
+}
+.hero_content>.divider {
+    width: 400px;
+    margin-right: 0px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgrey;
+}
+@media (max-width: 576px) {
+    .hero_content>.divider {
+        width: 300px;
+    }
+}
