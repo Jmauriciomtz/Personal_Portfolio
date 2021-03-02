@@ -5,9 +5,14 @@ body {
 .navbar-fixed-top {
     position: fixed;
     border-color: rgba(255, 255,255,0.2);
+    background-color: none;
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1;
+}
+.on-scroll {
+    background-color: #fff !important;
 }
 .my_name {
     font-size: x-large;
@@ -15,7 +20,7 @@ body {
 /*---- hero ----- */
 #hero {
     background-image: url(./images/hero_background.jpg);
-    min-height: 600px;
+    height: 600px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,6 +41,7 @@ left: -80px;
 }
 .hero_content>h1 {
     font-size: 4em;
+    font-family:Arial, Helvetica, sans-serif;
 }
 @media (max-width: 576px) {
     .hero_content {
@@ -61,4 +67,38 @@ left: -80px;
     .hero_content>.divider {
         width: 300px;
     }
+}
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.linkedin {
+    margin-right: 120px;
+    margin-left: 50px;
+}
+@media (max-width: 576px) {
+    .linkedin {
+        margin-right: 60px;
+        margin-left: 30px;
+    }
+}
+
+/*--- Portfolio ---*/
+.portfolio_section {
+    margin-top: 600px;
+    background-color: #fff;
+}
+.portfolio_header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.aspectRatioBox {
+    padding-top: calc(2 / 3 * 100%); /* aspect ratio 3:2 */
+    background-size: cover;
+    background-position: center;
 }
