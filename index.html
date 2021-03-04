@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 
 <head>
     <!-- Required meta tags -->
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <!--my css js-->
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="./commands.js"></script>
 
@@ -23,10 +24,10 @@
 <body data-spy="scroll" data-target="#navbarMenu">
     <nav id="navbarMenu" class="navbar navbar-expand w-100 border-bottom navbar-fixed-top">
         <div class="d-flex flex-grow-1">
-            <a class="navbar-brand my_name text-white" href="#">Jose Martinez</a>
+            <a class="navbar-brand my_name text-dark" href="#top">Jose Martinez</a>
             <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link text-dark" href="#">Portfolios</a>
-                <a class="nav-item nav-link text-dark" href="#">About</a>
+                <a class="nav-item nav-link text-dark" href="#portfolio">Portfolios</a>
+                <a class="nav-item nav-link text-dark" href="#about">About</a>
             </div>
         </div>
     </nav>
@@ -42,12 +43,12 @@
                         <hr class="divider">
                         <ul class="social-links d-flex flex-row">
                             <li>
-                                <a href="#" class="btn btn-secondary btn-lg github"><i
+                                <a href="https://github.com/Jmauriciomtz" class="btn btn-secondary btn-lg github"><i
                                         class="fab fa-github-square"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-secondary btn-lg linkedin"><i
-                                        class="fab fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/josemar19/"
+                                    class="btn btn-secondary btn-lg linkedin"><i class="fab fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -57,7 +58,7 @@
     </div>
 
     <!--Portfolios-->
-    <div class="portfolio_section container-fluid">
+    <div class="portfolio_section container-fluid" id="portfolio">
         <div class="row">
             <div class="col-xs-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
                 <p class="text-center portfolio_header">Portfolios</p>
@@ -101,6 +102,26 @@
                             <img src="https://via.placeholder.com/820X420.png" class="img-fluid">
                         </a>
                         <p class="description">Project description</p>
+                    </div>
+                </div>
+                <div class="row about_section" id="about">
+                    <div class="col-12">
+                        <p class="text-center">About Author</p>
+                    </div>
+                </div>
+                <div class="row pb-4">
+                    <div class="col-xs-12 col-md-8 offset-md-2">
+                        <div class="row d-flex flex-row align-items-center">
+                            <div class="col-4 aling">
+                                <img class="img-fluid aspectRatioBox pt-0" src="./images/profile_pic.jpg">
+                            </div>
+                            <div class="col-8 about_section_info">
+                                <p>Jose Martinez, a System's Engineer with experience in logistics and automation.
+                                    Has a passion for programming and is currently persuing Full Stack Web Development
+                                    certificate.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
