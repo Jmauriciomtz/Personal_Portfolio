@@ -103,6 +103,9 @@ left: -80px;
     background-size: cover;
     background-position: center;
 }
+.description {
+    font-size:x-large
+}
 
 /*--- About -- */
 .about_section > div > p{
@@ -113,6 +116,9 @@ left: -80px;
     text-transform: uppercase;
     letter-spacing: 1px;
 } 
+.about_section_info {
+    padding-left: 0px;
+}
 .about_section_info > p {
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
